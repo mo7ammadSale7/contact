@@ -1,0 +1,159 @@
+.contacts-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  .add-button {
+    height: 36px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    mat-icon {
+      margin-right: 8px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.filters {
+  margin-bottom: 24px;
+
+  form {
+    display: flex;
+    gap: 16px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .search-field {
+    flex: 1;
+
+    .mat-icon {
+      color: rgba(0, 0, 0, 0.54);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input {
+      height: 19px;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  margin-bottom: 16px;
+  background: white;
+
+  th {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  td {
+    padding: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+.actions-cell {
+  width: 150px;
+  text-align: right;
+  padding-right: 16px !important;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  .action-button {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    mat-icon {
+      margin: 0 !important;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+.lock-icon {
+  color: #ffd700;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-paginator {
+  background: white;
+}
+
+// Optional: Add these styles for a better hover effect on table rows
+tr.mat-row:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+// Additional styles to ensure icon centering in all button types
+[mat-icon-button] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  mat-icon {
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+// Ensure form field suffix icons are centered
+.mat-form-field-suffix {
+  display: flex !important;
+  align-items: center !important;
+}
